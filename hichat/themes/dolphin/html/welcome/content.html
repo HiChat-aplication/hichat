@@ -1,0 +1,37 @@
+<div class="row-welcome">
+	<div class="row-body">
+		<div class="welcome-inner">
+			<div class="welcome-message">
+				<div class="welcome-title">
+					<h1><font color="#696969">Perlu Informasi Tentang Hiking?</font></h1>
+				</div>
+
+				<div class="welcome-about">
+					<h3 style="font-style: arial; font-weight: bold; padding: 10px;"><b style="background: #4689db; color: #fff; padding: 5px;">HI-Chat</b></h3>
+					<font color="#2F4F4F">Jejaring Sosial Komunitas yang Bertujuan Mempermudah Menyapa Teman Komunitas Hiking, Sharing Pengalaman & Berbagi Informasi yang Dibutuhkan.</font> 
+				</div>
+			</div>
+			<div class="welcome-inputs">
+
+				<form action="" method="POST" autocomplete="off">
+					{$registerMsg}
+							<span style="background: #4698db; display: inherit; padding: 10px; color: #fff; font-size: 20px;">Daftarkan Akun HI-Chat Anda Gratis Selamanya</span><br>
+					<input type="text" id="short" name="username" placeholder="Username" />
+					<input type="password" id="short" name="password" placeholder="Password" />
+					<input type="email" id="short" name="email" placeholder="Email aktif" />
+					{$captcha}
+					<button type="submit" name="register"  class="register-button">Daftar Sekarang</button>
+				</form>
+				<br />
+				<form action="" method="POST" autocomplete="off">
+					{$loginMsg}
+					<span style="background: red; display: inherit; padding: 10px; color: #fff; font-size: 20px;">Masuk Dengan Akun Anda</span><br>
+					<input type="text" id="short" name="username" placeholder="Username" />
+					<input type="password" id="short" name="password" placeholder="Password" />
+					<!--<input type="checkbox" name="remember" value="1">-->
+					<button type="submit" name="login" class="login-button">{$lng->login}</button><span class="forgot-password"><a href="{$url}/index.php?a=recover">{$lng->forgot_password}</a></span>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
